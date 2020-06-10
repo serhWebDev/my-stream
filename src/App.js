@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import IndexPage from './javascript/pages/index/index';
+import StreamPage from './javascript/pages/stream/index';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          My youtube App
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/serhiiVek/my-youtoobe"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github repo
-        </a>
-      </header>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/video' component={StreamPage}/>
+                <Route path='/' component={IndexPage}/>
+            </Switch>
+        </BrowserRouter>
     </div>
   );
 }

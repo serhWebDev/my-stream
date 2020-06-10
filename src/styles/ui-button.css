@@ -1,0 +1,28 @@
+
+.ui-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #dce0e3;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+.ui-button__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-button--primary {
+    color: #fff;
+    background-color: #ffa726;
+    border-color: #eea236;
+}
+.ui-button--rounded {
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
