@@ -33,7 +33,6 @@ class VideoPlayer extends Component {
                         muted={true} />
                 </div>
                 <div className="row">
-
                     <UiButton
                         primary
                         text="Play"
